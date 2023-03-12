@@ -1,0 +1,391 @@
+[
+    {
+        "id":1,
+        "name":"i5 13600K",
+        "desc":"Procesador de escritorio de 14 núcleos (6 núcleos P + 8 núcleos electrónicos), caché de 24 M, hasta 5.1 GHz",
+        "price":319,
+        "img":"../imgs/i5.jpg",
+        "category":"cpu",
+        "brand":"Intel"
+    },
+    {
+        "id":2,
+        "name":"i7 13700K",
+        "desc":"Procesador de escritorio de 16 núcleos (8 núcleos P + 8 núcleos electrónicos), caché de 30 M, hasta 5.4 GHz",
+        "price":409,
+        "img":"../imgs/i7.jpg",
+        "category":"cpu",
+        "brand":"Intel"
+    },
+    {
+        "id":3,
+        "name":"i9 13900K",
+        "desc":"Procesador de escritorio de 24 núcleos (8 núcleos P + 16 núcleos electrónicos), caché de 36 M, hasta 5.8 GHz",
+        "price":589,
+        "img":"../imgs/i9.jpg",
+        "category":"cpu",
+        "brand":"Intel"
+    },
+    {
+        "id":4,
+        "name":"Ryzen 5 7600X",
+        "desc":"Procesador de escritorio desbloqueado de 6 núcleos, 12 hilos",
+        "price":229,
+        "img":"../imgs/ryzen5.jpg",
+        "category":"cpu",
+        "brand":"AMD"
+    },
+    {
+        "id":5,
+        "name":"Ryzen 7 7700X",
+        "desc":"Procesador de escritorio desbloqueado de 8 núcleos, 16 hilos",
+        "price":399,
+        "img":"../imgs/ryzen7.jpg",
+        "category":"cpu",
+        "brand":"AMD"
+    },
+    {
+        "id":6,
+        "name":"Ryzen 9 7900X",
+        "desc":"Procesador de escritorio desbloqueado de 12 núcleos, 24 hilos",
+        "price":549,
+        "img":"../imgs/ryzen9.jpg",
+        "category":"cpu",
+        "brand":"AMD"
+    },
+    {
+        "id":7,
+        "name":"RTX 3060",
+        "desc":"Tarjeta gráfica Founders Edition 8GB GDDR6 PCI Express 4.0",
+        "price":329,
+        "img":"../imgs/rtx3060.jpg",
+        "category":"gpu",
+        "brand":"Nvidia"
+    },
+    {
+        "id":8,
+        "name":"RTX 3070",
+        "desc":"Tarjeta gráfica Founders Edition GDDR6 PCI Express 4.0 de 8 GB",
+        "price":500,
+        "img":"../imgs/rtx3070.jpg",
+        "category":"gpu",
+        "brand":"Nvidia"
+    },
+    {
+        "id":9,
+        "name":"RTX 3080",
+        "desc":"Tarjeta gráfica Founders Edition GDDR6X PCI Express 4.0 de 10 GB",
+        "price":700,
+        "img":"../imgs/rtx3080.jpg",
+        "category":"gpu",
+        "brand":"Nvidia"
+    },
+    {
+        "id":10,
+        "name":"RTX 3090",
+        "desc":"Tarjeta gráfica Founders Edition GDDR6X PCI Express 4.0 de 24 GB",
+        "price":1500,
+        "img":"../imgs/rtx3090.jpg",
+        "category":"gpu",
+        "brand":"Nvidia"
+    },
+    {
+        "id":11,
+        "name":"RX 6600XT",
+        "desc":"Tarjeta gráfica para juegos con memoria GDDR6 de 8 GB, alimentado por AMD RDNA 2, HDMI 2.1",
+        "price":380,
+        "img":"../imgs/rx6600xt.jpg",
+        "category":"gpu",
+        "brand":"AMD"
+    },
+    {
+        "id":12,
+        "name":"RX 6700XT",
+        "desc":"Tarjeta gráfica para juegos con memoria GDDR6 de 12 GB, alimentado por AMD RDNA 2, Raytracing, PCI Express 4.0, HDMI 2.1, AMD Infinity Cache",
+        "price":480,
+        "img":"../imgs/rx6700xt.jpg",
+        "category":"gpu",
+        "brand":"AMD"
+    },
+    {
+        "id":13,
+        "name":"RX 6800XT",
+        "desc":"Tarjeta gráfica para juegos con 16GB GDDR6 PCIe 4.0 AMD RDNA 2",
+        "price":650,
+        "img":"../imgs/rx6800xt.jpg",
+        "category":"gpu",
+        "brand":"AMD"
+    },
+    {
+        "id":14,
+        "name":"RX 6900XT",
+        "desc":"Tarjeta gráfica para juegos con 16 GB GDDR6, HDMI 2.1, 2xDP, USB-C, AMD RDNA 2",
+        "price":1000,
+        "img":"../imgs/rx6900xt.jpg",
+        "category":"gpu",
+        "brand":"AMD"
+    },
+    {
+        "id":15,
+        "name":"8GB 3200MHz",
+        "desc":"Memoria para computadora de escritorio 1.5 V DDR4 3200 MHz",
+        "price":30,
+        "img":"../imgs/ddr4.jpg",
+        "category":"ram",
+        "type":"DDR4",
+        "brand":"Corsair"
+    },
+    {
+        "id":16,
+        "name":"Kit 16GB(2x8) 3200MHz",
+        "desc":"Kit de memorias para computadora de escritorio 1.5 V DDR4 3200 MHz",
+        "price":45,
+        "img":"../imgs/kitddr4.jpg",
+        "category":"ram",
+        "type":"DDR4",
+        "brand":"Corsair"
+    },
+    {
+        "id":17,
+        "name":"16GB 3200MHz",
+        "desc":"Memoria para computadora de escritorio 1.5 V DDR4 3200 MHz",
+        "price":45,
+        "img":"../imgs/ddr4.jpg",
+        "category":"ram",
+        "type":"DDR4",
+        "brand":"Corsair"
+    },
+    {
+        "id":18,
+        "name":"Kit 32GB(2X16) 3200MHz",
+        "desc":"Kit de memorias para computadora de escritorio 1.5 V DDR4 3200 MHz",
+        "price":80,
+        "img":"../imgs/kitddr4.jpg",
+        "category":"ram",
+        "type":"DDR4",
+        "brand":"Corsair"
+    },
+    {
+        "id":19,
+        "name":"8GB 4800MHz",
+        "desc":"Memoria para computadora de escritorio DDR5 4800 MHz",
+        "price":50,
+        "img":"../imgs/ddr5.jpg",
+        "category":"ram",
+        "type":"DDR5",
+        "brand":"Kingston"
+    },
+    {
+        "id":20,
+        "name":"Kit 16GB(2x8) 4800MHz",
+        "desc":"Kit de memorias para computadora de escritorio DDR5 4800 MHz",
+        "price":80,
+        "img":"../imgs/kitddr5.jpg",
+        "category":"ram",
+        "type":"DDR5",
+        "brand":"Kingston"
+    },
+    {
+        "id":21,
+        "name":"16GB 4800MHz",
+        "desc":"Memoria para computadora de escritorio DDR5 4800 MHz",
+        "price":85,
+        "img":"../imgs/ddr5.jpg",
+        "category":"ram",
+        "type":"DDR5",
+        "brand":"Kingston"
+    },
+    {
+        "id":22,
+        "name":"Kit 32GB(2X16) 4800MHz",
+        "desc":"Kit de memorias para computadora de escritorio DDR5 4800 MHz",
+        "price":125,
+        "img":"../imgs/kitddr5.jpg",
+        "category":"ram",
+        "type":"DDR5",
+        "brand":"Kingston"
+    },
+    {
+        "id":23,
+        "name":"B760M DDR4",
+        "desc":"LGA 1700/ Intel/ B760/ M-ATX/ DDR4/ 2* M.2/ PCIe 4.0/ USB 3.2 Gen 2 Tipo-C/WiFi 6E/ 2.5GbE LAN/Q-Flash Plus/PCIe EZ-Latch/placa base para juegos",
+        "price":120,
+        "img":"../imgs/b760ddr4.png",
+        "category":"motherboard",
+        "socket":"Intel",
+        "brand":"Gigabyte"
+    },
+    {
+        "id":24,
+        "name":"Z790 DDR4",
+        "desc":"LGA 1700/ Intel Z790/ ATX/ DDR4/ Quad M.2/ PCIe 5.0/ USB 3.2 Gen2X2 Tipo-C/Intel Wi-Fi 6E/ 2.5GbE LAN/Q-Flash Plus/EZ-Latch Plus/placa base para juegos",
+        "price":250,
+        "img":"../imgs/z790ddr4.png",
+        "category":"motherboard",
+        "socket":"Intel",
+        "brand":"Gigabyte"
+    },
+    {
+        "id":25,
+        "name":"B760M DDR5",
+        "desc":"LGA 1700/ Intel/ B760/ M-ATX/ DDR5/ Dual M.2/ PCIe 4.0/ USB 3.2 Gen2X2 Type-C/Intel Wi-Fi 6E/ 2.5GbE LAN/Q-Flash Plus/PCIe EZ-Latch/placa base para juegos",
+        "price":170,
+        "img":"../imgs/b760ddr5.png",
+        "category":"motherboard",
+        "socket":"Intel",
+        "brand":"Gigabyte"
+    },
+    {
+        "id":26,
+        "name":"TUF Z790-Plus DDR5",
+        "desc":"WiFi LGA 1700 (Intel® 12ª y 13ª generación) ATX Gaming Motherboard (PCIe 5.0, DDR5, 4xM.2 ranuras, 16+1 DrMOS, WiFi 6, LAN de 2.5 Gb, USB frontal 3.2 Gen 2 Type-C®, Thunderbolt 4(USB4), Aura RGB)",
+        "price":280,
+        "img":"../imgs/z790ddr5_.jpg",
+        "category":"motherboard",
+        "socket":"Intel",
+        "brand":"ASUS"
+    },
+    {
+        "id":27,
+        "name":"TUF B650-Plus DDR5",
+        "desc":"WiFi Socket AM5 (LGA 1718) Ryzen 7000 ATX Gaming Motherboard (14 etapas de potencia, soporte PCIe® 5.0 M.2, memoria DDR5, Ethernet de 2.5 Gb, WiFi 6, soporte USB4® y sincronización Aura)",
+        "price":240,
+        "img":"../imgs/b650ddr5.jpg",
+        "category":"motherboard",
+        "socket":"AMD",
+        "brand":"ASUS"
+    },
+    {
+        "id":28,
+        "name":"PRIME X670-P DDR5",
+        "desc":"WiFi Socket AM5 (LGA 1718) Ryzen 7000 ATX placa base (DDR5, tres ranuras M.2, USB 3.2 Gen 2x2 Type-C®, soporte USB4®, WiFi 6 y 2.5 GB Ethernet)",
+        "price":270,
+        "img":"../imgs/x670ddr5.jpg",
+        "category":"motherboard",
+        "socket":"AMD",
+        "brand":"ASUS"
+    },
+    {
+        "id":29,
+        "name":"BLACK SN770 500GB",
+        "desc":"Unidad interna de estado sólido SSD SN770 NVMe de 500 GB - Gen4 PCIe, M.2 2280, hasta 4,000 MB/s",
+        "price":40,
+        "img":"../imgs/ssd500gb.jpg",
+        "category":"storage",
+        "type":"SSD",
+        "brand":"WD"
+    },
+    {
+        "id":30,
+        "name":"970 EVO 1TB",
+        "desc":"PCIe NVMe - M.2 Internal SSD",
+        "price":80,
+        "img":"../imgs/ssd1tb.jpg",
+        "category":"storage",
+        "type":"SSD",
+        "brand":"Samsung"
+    },
+    {
+        "id":31,
+        "name":"980 EVO PRO 2TB",
+        "desc":"SSD M.2 980 PRO 2TB PCIe NVMe Gen4 interno para juegos",
+        "price":170,
+        "img":"../imgs/ssd2tb.jpg",
+        "category":"storage",
+        "type":"SSD",
+        "brand":"Samsung"
+    },
+    {
+        "id":32,
+        "name":"Blue 1TB",
+        "desc":"Disco duro interno de PC azul WD de 1 TB - 7200 RPM, SATA 6 Gb/s, caché de 64 MB, 3.5 Pulgadas",
+        "price":38,
+        "img":"../imgs/hdd1tb.jpg",
+        "category":"storage",
+        "type":"HDD",
+        "brand":"WD"
+    },
+    {
+        "id":33,
+        "name":"WD Blue 2TB",
+        "desc":"Disco duro interno de PC azul WD de 2 TB - 7200 RPM, SATA 6 Gb/s, caché de 64 MB, 3.5 Pulgadas",
+        "price":50,
+        "img":"../imgs/hdd2tb.jpg",
+        "category":"storage",
+        "type":"HDD",
+        "brand":"WD"
+    },
+    {
+        "id":34,
+        "name":"Blue 4TB",
+        "desc":"Disco duro interno de PC azul WD de 4 TB - 7200 RPM, SATA 6 Gb/s, caché de 64 MB, 3.5 Pulgadas",
+        "price":68,
+        "img":"../imgs/hdd4tb.jpg",
+        "category":"storage",
+        "type":"HDD",
+        "brand":"WD"
+    },
+    {
+        "id":35,
+        "name":"H5 Flow Compact",
+        "desc":"Carcasa para juegos de PC de media torre Panel frontal perforado de alto flujo de aire Panel lateral de vidrio templado Gestión de cables 2 ventiladores de 4.724 in incluidos Soporte de radiador de 11.024 in Negro",
+        "price":95,
+        "img":"../imgs/nzxtcase.jpg",
+        "category":"case",
+        "brand":"NZXT"
+    },
+    {
+        "id":36,
+        "name":"Cyclon RGB",
+        "desc":"Torre central con ventana lateral acrílica, color negro",
+        "price":54,
+        "img":"../imgs/aerocoolcase.jpg",
+        "category":"case",
+        "brand":"Aerocool"
+    },
+    {
+        "id":37,
+        "name":"4000D Airflow",
+        "desc":"Gabinete ATX semitorre para PC con vidrio templado, color negro",
+        "price":95,
+        "img":"../imgs/corsaircase.jpg",
+        "category":"case",
+        "brand":"Corsair"
+    },
+    {
+        "id":38,
+        "name":"Smart 650w 80 Plus Bronze",
+        "desc":"Fuente de alimentación semimodular Ventilador silencioso condensador japonés",
+        "price":65,
+        "img":"../imgs/psu650w.jpg",
+        "category":"psu",
+        "brand":"Thermaltake"
+    },
+    {
+        "id":39,
+        "name":"750w 80 Plus Gold",
+        "desc":"Fuente de alimentación semimodular ATX 12V o EPS 12V Ultra Silenciosa",
+        "price":97,
+        "img":"../imgs/psu750w.jpg",
+        "category":"psu",
+        "brand":"Thermaltake"
+    },
+    {
+        "id":40,
+        "name":"C850 850w 80 Plus Gold",
+        "desc":"Fuente de alimentación de 850 W - Certificado dorado 80+ - Totalmente modular - Cables con funda - Fuente de alimentación ATX para juegos",
+        "price":140,
+        "img":"../imgs/psu850w.jpg",
+        "category":"psu",
+        "brand":"NZXT"
+    },
+    {
+        "id":41,
+        "name":"Straight Power 1000w 80 Plus Platinum",
+        "desc":"Fuente de alimentación totalmente modular, 80 Plus Platinum",
+        "price":210,
+        "img":"../imgs/psu1000w.jpg",
+        "category":"psu",
+        "brand":"be quiet!"
+    }
+]

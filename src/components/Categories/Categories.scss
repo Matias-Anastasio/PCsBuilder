@@ -1,0 +1,36 @@
+.category-selector{
+    margin: 60px auto;
+    width: 80%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #dedede;
+    border-radius: 3px;
+    .category-link{
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        width: 12.5%;
+        height: 40px;
+        transition: 0.2s;
+        &:not(:last-of-type){
+            border-right: 1px solid #dedede;
+        }
+        
+    }
+    .activeLink{
+        color: white;
+        background: #2a2a2a;
+    }
+    .normalLink{
+        color: #2a2a2a;
+        &:hover{
+            color: white;
+            background: #2a2a2a;
+        }
+    }
+    
+}

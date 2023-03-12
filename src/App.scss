@@ -8,7 +8,8 @@
 }
 
 .Main-Container{
-  width: 100vw;
-  height: 100vh;
-  background: #222222;
+  max-width: 100vw;
+  min-height: 100vh;
+  height: fit-content;
+  background: rgba(#000,0.03);
 }

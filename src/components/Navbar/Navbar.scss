@@ -7,9 +7,13 @@ header{
         justify-content: space-around;
         align-items: center;
         flex-direction: row;
-        h1{
-            font-family: 'Aldrich', sans-serif;
-            font-size: 42px;
+        .logo{
+            text-decoration: none;
+            color: white;
+            h1{
+                font-family: 'Aldrich', sans-serif;
+                font-size: 42px;
+            }
         }
         nav{
             width: 35%;
@@ -22,10 +26,12 @@ header{
                 li{
                     padding: 5px;
                     margin: 5px;
-                    a{
+                    .navbar-link{
                         color: white;
                         text-decoration: none;
                         position: relative;
+                    }
+                    .normal{
                         &::before{
                             position: absolute;
                             content: "";
@@ -38,6 +44,9 @@ header{
                         &:hover::before{
                             width: 100%;
                         }
+                    }
+                    .active{
+                        border-bottom: 2px solid white;
                     }
                 }
             }
