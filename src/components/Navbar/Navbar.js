@@ -11,9 +11,9 @@ export const Navbar = () => {
                 <NavLink to="/" className='logo'><h1>PCsBuilder</h1></NavLink>
                 <nav>
                     <ul>
-                        <li><NavLink to="/componentes" className={({isActive})=> (isActive ? 'active navbar-link' : 'normal navbar-link')}>Componentes</NavLink></li>
-                        <li><NavLink to="/" className={({isActive})=> (isActive ? 'active navbar-link' : 'normal navbar-link')}>PCs Armadas</NavLink></li>
-                        <li><NavLink to="/" className={({isActive})=> (isActive ? 'active navbar-link' : 'normal navbar-link')}>Novedades</NavLink></li>
+                        <li><NavLink to="/productos" className={({isActive})=> (isActive ? 'active navbar-link' : 'normal navbar-link')}>Productos</NavLink></li>
+                        <li><NavLink to="/armatupc" className={({isActive})=> (isActive ? 'active navbar-link' : 'normal navbar-link')}>Armá tu PC</NavLink></li>
+                        <li><NavLink to="/perifericos" className={({isActive})=> (isActive ? 'active navbar-link' : 'normal navbar-link')}>Periféricos</NavLink></li>
                     </ul>
                     <CartWidget/>
                 </nav>

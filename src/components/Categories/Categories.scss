@@ -7,7 +7,7 @@
     align-items: center;
     border: 1px solid #dedede;
     border-radius: 3px;
-    .category-link{
+    .category-label{
         text-decoration: none;
         display: flex;
         justify-content: center;
@@ -19,18 +19,17 @@
         &:not(:last-of-type){
             border-right: 1px solid #dedede;
         }
-        
-    }
-    .activeLink{
-        color: white;
-        background: #2a2a2a;
-    }
-    .normalLink{
-        color: #2a2a2a;
         &:hover{
             color: white;
             background: #2a2a2a;
         }
+        
     }
-    
+    .category-radio{
+        display: none;
+    }
+    .category-radio:checked + .category-label{
+        color: white;
+        background: #2a2a2a;
+    }
 }

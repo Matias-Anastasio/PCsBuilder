@@ -2,6 +2,8 @@ import './App.scss';
 import { Navbar } from "./components/Navbar/Navbar.js"
 import { ItemListContainer } from "./components/ItemListContainer/ItemListContainer.js"
 import { BrowserRouter, Routes, Route} from "react-router-dom"
+import { Hero } from './components/Hero/Hero';
+import { ItemDetailContainer } from './components/ItemDetailContainer/ItemDetailContaier';
 
 function App() {
   return (
@@ -10,8 +12,10 @@ function App() {
       <BrowserRouter>
         <Navbar/>
         <Routes>
-          <Route path='/componentes' element={<ItemListContainer/>}/>
-          <Route path='/componentes/:categoryId' element={<ItemListContainer/>}/>
+          <Route path='/' element={<Hero/>}/>
+          <Route path='/productos' element={<ItemListContainer/>}/>
+          <Route path='/productos/:categoryId' element={<ItemListContainer/>}/>
+          <Route path='/item/:itemId' element={<ItemDetailContainer/>}/>
         </Routes>      
         
       </BrowserRouter>

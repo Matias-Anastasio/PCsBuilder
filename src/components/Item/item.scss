@@ -8,9 +8,15 @@
     justify-content: space-between;
     flex-direction: column;
     align-items: center;
+    text-decoration: none;
 
     &:hover {
         cursor: pointer;
+        .item-text{
+            h4{
+                text-decoration: underline;
+            }
+        }
     }
 
     img {
@@ -19,7 +25,8 @@
         margin: auto;
     }
 
-    >div {
+    .item-text{
+        color: black;
         height: 35%;
         width: 100%;
         justify-self: left;
@@ -36,6 +43,12 @@
         .price {
             font-size: 18px;
             align-self: flex-end;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            span {
+                font-size: 13px;
+            }
         }
 
         .desc {
