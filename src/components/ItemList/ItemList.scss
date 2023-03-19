@@ -2,6 +2,7 @@ div{
     .itemlist{
         width: 80%;
         margin: auto;
+        padding: 100px 0;
         display: grid;
         gap: 5px;
         grid-template-columns: repeat(auto-fill, minmax(350px,1fr));

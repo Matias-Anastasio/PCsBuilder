@@ -6,7 +6,7 @@ export const Categories = () => {
     const navigate = useNavigate()
 
     const handleChange = (e) => {
-        navigate('/productos/' + e.target.value)
+        navigate('/' + e.target.value)
     }
 
     return (

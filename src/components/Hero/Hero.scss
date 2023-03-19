@@ -1,10 +1,10 @@
 .hero{
     background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('./fondo.jpg');
-    background-position: center;
+    background-position:center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    height: calc(100vh - 70px);
+    height: calc(75vh - 70px);
     color: white;
     display: flex;
     flex-direction: column;

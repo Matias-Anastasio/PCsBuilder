@@ -2,7 +2,7 @@ import './App.scss';
 import { Navbar } from "./components/Navbar/Navbar.js"
 import { ItemListContainer } from "./components/ItemListContainer/ItemListContainer.js"
 import { BrowserRouter, Routes, Route} from "react-router-dom"
-import { Hero } from './components/Hero/Hero';
+// import { Hero } from './components/Hero/Hero';
 import { ItemDetailContainer } from './components/ItemDetailContainer/ItemDetailContaier';
 
 function App() {
@@ -12,9 +12,9 @@ function App() {
       <BrowserRouter>
         <Navbar/>
         <Routes>
-          <Route path='/' element={<Hero/>}/>
-          <Route path='/productos' element={<ItemListContainer/>}/>
-          <Route path='/productos/:categoryId' element={<ItemListContainer/>}/>
+          {/* <Route path='/' element={<Hero/>}/> */}
+          <Route path='/' element={<ItemListContainer/>}/>
+          <Route path='/:categoryId' element={<ItemListContainer/>}/>
           <Route path='/item/:itemId' element={<ItemDetailContainer/>}/>
         </Routes>      
         

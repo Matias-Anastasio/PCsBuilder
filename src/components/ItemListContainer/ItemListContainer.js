@@ -36,8 +36,8 @@ export const ItemListContainer = () => {
 
     return (
         <div>
-            {/* <h2>Componentes</h2> */}
-            <Categories/>
+            {/* <h2>Armá tu PC Fácil y Rápido</h2> */}
+            {/* <Categories/> */}
             {
                 loading 
                     ? <LoadingBar/>
