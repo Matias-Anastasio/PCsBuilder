@@ -8,7 +8,7 @@ export const Navbar = () => {
     return(
         <header>
                 <div>
-                <NavLink to="/" className='logo'><h1>PCsBuilder</h1></NavLink>
+                <NavLink to="/" className='logo'><h1>PC<span>s</span>Builder</h1></NavLink>
                 <nav>
                     <ul>
                     {}
@@ -23,10 +23,10 @@ export const Navbar = () => {
                                 <Link className='category-link' to="/psu"><li>Fuentes de Poder</li></Link>
                             </ul>
                         </li>
-                        <li><NavLink to="/armatupc" className={({isActive})=> (isActive ? 'active navbar-link' : 'normal navbar-link')}>Armá tu PC</NavLink></li>
                         <li><NavLink to="/contacto" className={({isActive})=> (isActive ? 'active navbar-link' : 'normal navbar-link')}>Contacto</NavLink></li>
                     </ul>
                     <CartWidget/>
+                    
                 </nav>
                 </div>
                 

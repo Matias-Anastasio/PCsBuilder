@@ -42,36 +42,38 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
+            align-items: center;
 
             h2{
                 font-weight: 500;
+                width: 100%;
                 border-bottom: 1px solid #dedede;
                 margin-bottom: 25px;
+                align-self: flex-start;
             }
             .item-desc{
                 margin-bottom: 70px;
+                align-self: flex-start;
             }
             .item-price{
                 align-self: center;
                 display: flex;
                 align-items: center;
                 margin-bottom: 30px;
-                .envio{
-                    color: #c2c2c2;
-                    margin-left: 5px;
-                    &:hover{
-                        text-decoration:underline;
-                        cursor: pointer;
-                        color: #a1a1a1;
-                    }
-                }
                 .price{
                     font-weight: 500;
                     font-size: 18px;
                     margin:0 15px;
                 }
             }
+            .item-stock{
+                align-self: center;
+                color: #999;
+                font-size: 14px;
+                margin-bottom: 30px;
+            }
             .add-button{
+                margin-top: 30px;
                 align-self: center;
                 width: 70%;
                 height: 40px;
