@@ -13,3 +13,13 @@
   height: fit-content;
   background: rgba(#000,0.03);
 }
+
+body::-webkit-scrollbar{
+  width: 7px;
+}
+
+body::-webkit-scrollbar-thumb{
+  background-color: #2a2a2a;
+}
+
+

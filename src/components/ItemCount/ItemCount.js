@@ -3,11 +3,11 @@ import './ItemCount.scss'
 
 export const ItemCount = ({max, amount, setAmount}) => {
 
-    const handleSubtract = (e) =>{
+    const handleSubtract = () =>{
         amount > 1 && setAmount(amount - 1)
     }
 
-    const handleAdd = (e) =>{
+    const handleAdd = () =>{
         amount < max && setAmount(amount + 1)
     }
 

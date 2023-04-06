@@ -17,7 +17,6 @@ header {
                 font-family: 'Aldrich', sans-serif;
                 font-size: 42px;
                 display: flex;
-                // justify-content: center;
                 align-items: start;
                 span{
                     font-family: 'Aldrich', sans-serif;
@@ -44,6 +43,10 @@ header {
                         color: white;
                         text-decoration: none;
                         position: relative;
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+                        
                     }
 
                     .normal{
@@ -72,10 +75,6 @@ header {
 
                     &:hover {
                         background-color: #222;
-
-                        .categories {
-                            height: fit-content;
-                        }
                     }
 
                     .categories {
@@ -107,6 +106,14 @@ header {
                             }
                         }
                     }
+                    .show{
+                        height: fit-content;
+                    }
+
+                    .hide{
+                        height: 0px;
+                    }
+
                 }
             }
         }
