@@ -14,6 +14,10 @@ export const Cart =()=>{
         navigate("/")
     }
 
+    const handleBuy =()=>{
+        navigate("/checkout")
+    }
+
     if(cart.length===0){
         return(
             <div className='empty-cart'>
@@ -55,7 +59,7 @@ export const Cart =()=>{
                 <button onClick={clearCart} className='delete-all-btn'>Vaciar Carrito</button>
                 <div>
                     <h3>Total: <span className='cart-total-price'>US$ {cartPrice()}</span></h3>
-                    <button className='cart-buy-btn'>Terminar Compra</button>
+                    <button onClick={handleBuy} className='cart-buy-btn'>Terminar Compra</button>
                 </div>
             </div>
         </div>
