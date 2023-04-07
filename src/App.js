@@ -17,11 +17,11 @@ function App() {
 					<Navbar/>
 					<Routes>
 						<Route path='/' element={<ItemListContainer/>}/>
-						<Route path='/:categoryId' element={<ItemListContainer/>}/>
+						<Route path='/productos/:categoryId' element={<ItemListContainer/>}/>
 						<Route path='/item/:itemId' element={<ItemDetailContainer/>}/>
 						<Route path='/cart' element={<Cart/>}/>
 						<Route path='/checkout' element={<Checkout/>}/>
-						<Route path="*" element={ <Navigate to="/" /> }/>
+						<Route path="*" element={ <Navigate to='/'/> }/>
 					</Routes>      
 
 				</BrowserRouter>

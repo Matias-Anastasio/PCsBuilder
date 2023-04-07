@@ -21,13 +21,13 @@ export const Navbar = () => {
                     <ul>
                         <li className='productos' onClick={()=>{handleList("hide")}} onMouseOver={()=>{handleList("show")}} onMouseOut={()=>{handleList("hide")}}><Link to="/" className='navbar-link'>Todos los Productos <MdKeyboardArrowDown/></Link>
                             <ul className={`categories ${list}`}>
-                                <Link className='category-link' to="/cpu"><li>Procesadores</li></Link>
-                                <Link className='category-link' to="/gpu"><li>Tarjetas Gráficas</li></Link>
-                                <Link className='category-link' to="/ram"><li>Memoria RAM</li></Link>
-                                <Link className='category-link' to="/motherboard"><li>Placas Base</li></Link>
-                                <Link className='category-link' to="/storage"><li>Almacenamiento</li></Link>
-                                <Link className='category-link' to="/case"><li>Gabinetes</li></Link>
-                                <Link className='category-link' to="/psu"><li>Fuentes de Poder</li></Link>
+                                <Link className='category-link' to="/productos/cpu"><li>Procesadores</li></Link>
+                                <Link className='category-link' to="/productos/gpu"><li>Tarjetas Gráficas</li></Link>
+                                <Link className='category-link' to="/productos/ram"><li>Memoria RAM</li></Link>
+                                <Link className='category-link' to="/productos/motherboard"><li>Placas Base</li></Link>
+                                <Link className='category-link' to="/productos/storage"><li>Almacenamiento</li></Link>
+                                <Link className='category-link' to="/productos/case"><li>Gabinetes</li></Link>
+                                <Link className='category-link' to="/productos/psu"><li>Fuentes de Poder</li></Link>
                             </ul>
                         </li>
                         {/* <li><NavLink to="/contacto" className={({isActive})=> (isActive ? 'active navbar-link' : 'normal navbar-link')}>Contacto</NavLink></li> */}

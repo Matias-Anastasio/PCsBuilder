@@ -27,7 +27,6 @@ export const ItemListContainer = () => {
                 const docs = res.docs.map((doc)=>{
                     return {...doc.data(), id: doc.id}
                 })
-                console.log(docs)
                 setProductos(docs)
             })
             .finally(()=>{
