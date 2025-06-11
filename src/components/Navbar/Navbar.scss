@@ -2,7 +2,11 @@ header {
     background: #2a2a2a;
     color: white;
     padding: 10px;
-
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    height: 70.5px;
     div {
         display: flex;
         justify-content: space-around;
@@ -37,7 +41,7 @@ header {
 
                 li {
                     padding: 10px;
-                    margin: 5px;
+                    // margin: 5px;
 
                     .navbar-link {
                         color: white;
@@ -72,7 +76,12 @@ header {
 
                 .productos {
                     position: relative;
-
+                    width: 195px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 5px;
+                    user-select: none;
                     &:hover {
                         background-color: #222;
                     }
@@ -84,7 +93,7 @@ header {
                         position: absolute;
                         overflow: hidden;
                         display: flex;
-
+                        height: fit-content;
                         flex-direction: column;
                         background-color: #2a2a2a;
                         top: 100%;
@@ -106,12 +115,8 @@ header {
                             }
                         }
                     }
-                    .show{
-                        height: fit-content;
-                    }
-
                     .hide{
-                        height: 0px;
+                        display: none;
                     }
 
                 }
@@ -119,3 +124,38 @@ header {
         }
     }
 }
+
+@media (max-width: 750px) {
+    header{
+        div{
+            nav{
+                width: 45%;
+                ul{
+                    .productos{
+                        &:hover{
+                            background-color: initial;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 500px){
+    header{
+        div{
+            justify-content: space-evenly;
+            .logo{
+                h1{
+                    font-size: 24px;
+                    span{
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+

@@ -41,6 +41,7 @@ export const ItemListContainer = () => {
             {
                 loading 
                     ? <LoadingBar/>
+                    // : <LoadingBar/> 
                     : <ItemList items={productos} />  
             }
         </div>
