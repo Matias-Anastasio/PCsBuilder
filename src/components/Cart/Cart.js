@@ -1,25 +1,26 @@
 import { useContext } from 'react';
 import { CartContext } from '../../contex/CartContext';
 import './Cart.scss';
-import {RxCross1} from "react-icons/rx";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTrash } from '@fortawesome/free-solid-svg-icons';
 import { useNavigate } from 'react-router-dom';
 
-export const Cart =()=>{
+export const Cart = () => {
 
-    const {cart, cartPrice, deleteFromCart, clearCart} = useContext(CartContext)
+    const { cart, cartPrice, deleteFromCart, clearCart } = useContext(CartContext)
 
     const navigate = useNavigate()
 
-    const handleEmptyCart =()=>{
+    const handleEmptyCart = () => {
         navigate("/")
     }
 
-    const handleBuy =()=>{
+    const handleBuy = () => {
         navigate("/checkout")
     }
 
-    if(cart.length===0){
-        return(
+    if (cart.length === 0) {
+        return (
             <div className='empty-cart'>
                 <p>Aún no hay nada aquí</p>
                 <button onClick={handleEmptyCart}>Ver Productos</button>
@@ -27,29 +28,23 @@ export const Cart =()=>{
         )
     }
 
-    return(
+    return (
         <div className='cart-container'>
             <h2>Carrito de Compras</h2>
             {
-                cart.map((item) =>(
+                cart.map((item) => (
                     <div className='cart-item' key={item.id}>
                         <div className='cart-img-cont'>
-                            <img className='cart-img' src={item.img} alt={item.name}/>
+                            <img className='cart-img' src={item.img} alt={item.name} />
                         </div>
                         <div className='cart-text'>
                             <h4>{item.brand + " " + item.name + " " + (item.type ? item.type : "")}</h4>
                             <p>Precio unitario: US$ {item.price}</p>
-                            {/* <p>stock: {item.stock}</p> */}
+                            <p>Cant: {item.amount}</p>
                         </div>
-                        {/* <div className='cart-amount'>
-                            <p>Cantidad: </p>
-                            <button className='cart-amount-btn'>-</button>
-                            <p>{item.amount}</p>
-                            <button onClick={()=>{addAmount(item)}} className='cart-amount-btn'>+</button>
-                        </div> */}
-                            <p>Precio total: <span className='cart-price'>US$ {item.price*item.amount}</span></p>
-                        <div>
-                            <button onClick={()=>{deleteFromCart(item.id)}} className='delete-item-btn'><RxCross1/></button>
+                        <p className='cart-item-price'>Total: <span className='cart-price'>US$ {item.price * item.amount}</span></p>
+                        <div className='cart-item-delete'>
+                            <button onClick={() => { deleteFromCart(item.id) }} className='delete-item-btn'><FontAwesomeIcon icon={faTrash} /></button>
                         </div>
 
                     </div>
@@ -57,10 +52,8 @@ export const Cart =()=>{
             }
             <div className='cart-total'>
                 <button onClick={clearCart} className='delete-all-btn'>Vaciar Carrito</button>
-                <div>
                     <h3>Total: <span className='cart-total-price'>US$ {cartPrice()}</span></h3>
                     <button onClick={handleBuy} className='cart-buy-btn'>Terminar Compra</button>
-                </div>
             </div>
         </div>
     )

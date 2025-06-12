@@ -1,0 +1,42 @@
+footer{
+    width: 100%;
+    background-color: #2a2a2a;
+    color: white;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 7px;
+    text-align: center;
+    .footer-social{
+        display: flex;
+        gap: 10px;
+        a{
+            color: white;
+            font-size: 32px;
+            opacity: .85;
+            transition: .25s;
+            &:hover{
+                opacity: 1;
+            }
+        }
+    }
+    .footer-disc, .footer-sign{
+        opacity: .7;
+        font-size: 12px;
+    }
+    .footer-sign{
+        a{
+            color: white;
+        }
+    }
+}
+
+@media (max-width:600px){
+    footer{
+        .footer-message{
+            font-size: 14px;
+        }
+    }
+}
