@@ -9,9 +9,10 @@
 
 .Main-Container{
   max-width: 100vw;
-  min-height: 100vh;
+  min-height: calc(100vh - 70.5px);
   height: fit-content;
   background: rgba(#000,0.03);
+  margin-top: 70.5px;
 }
 
 body::-webkit-scrollbar{

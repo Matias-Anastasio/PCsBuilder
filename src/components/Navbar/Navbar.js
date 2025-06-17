@@ -7,10 +7,10 @@ import { useState } from 'react';
 
 export const Navbar = () => {
 
-    const [list, setList] = useState("")
+    const [hide, setHide] = useState(false)
 
-    const handleList = (value) =>{
-        setList(value)
+    const handleHide = () => {
+        setHide(!hide)
     }
 
     return(
@@ -19,8 +19,9 @@ export const Navbar = () => {
                 <NavLink to="/" className='logo'><h1>PC<span>s</span>Builder</h1></NavLink>
                 <nav>
                     <ul>
-                        <li className='productos' onClick={()=>{handleList("hide")}} onMouseOver={()=>{handleList("show")}} onMouseOut={()=>{handleList("hide")}}><Link to="/" className='navbar-link'>Todos los Productos <MdKeyboardArrowDown/></Link>
-                            <ul className={`categories ${list}`}>
+                        <li className='productos' onClick={()=>{handleHide()}} onMouseOver={()=>{setHide(true)}} onMouseOut={()=>{setHide(false)}}>Productos <MdKeyboardArrowDown/>
+                            <ul className={`categories ${!hide ? "hide":""}`}>
+                                <Link className='category-link' to=''><li>Todos los productos</li> </Link>
                                 <Link className='category-link' to="/productos/cpu"><li>Procesadores</li></Link>
                                 <Link className='category-link' to="/productos/gpu"><li>Tarjetas Gráficas</li></Link>
                                 <Link className='category-link' to="/productos/ram"><li>Memoria RAM</li></Link>
@@ -30,7 +31,6 @@ export const Navbar = () => {
                                 <Link className='category-link' to="/productos/psu"><li>Fuentes de Poder</li></Link>
                             </ul>
                         </li>
-                        {/* <li><NavLink to="/contacto" className={({isActive})=> (isActive ? 'active navbar-link' : 'normal navbar-link')}>Contacto</NavLink></li> */}
                     </ul>
                     <CartWidget/>
 

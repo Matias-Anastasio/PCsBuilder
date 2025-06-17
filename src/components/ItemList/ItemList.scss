@@ -9,3 +9,14 @@ div{
         // color: white;
     }
 }
+
+@media (max-width:440px){
+    div{
+        .itemlist{
+            display: flex;
+            flex-direction: column;
+            width: 85%;
+            padding-top: 50px;
+        }
+    }
+}
