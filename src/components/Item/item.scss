@@ -63,22 +63,7 @@
             display: -webkit-box;
             -webkit-line-clamp: 2;
             -webkit-box-orient: vertical;
-
-            // &::before {
-            //     content: '';
-            //     width: 100%;
-            //     height: 100%;
-            //     position: absolute;
-            //     left: 0;
-            //     top: 0;
-            //     background: linear-gradient(transparent, white);
-            // }
+            line-clamp: 2;
         }
-    }
-}
-
-
-@media (max-width:550px){
-    .item{
     }
 }

@@ -12,8 +12,8 @@ export const Cart = () => {
 
     const navigate = useNavigate()
 
-    const [showConfirm, setShowConfirm] = useState(true)
-    const [confirmMsg, setConfigMsg] = useState('¿Eliminar este producto del carrito?')
+    const [showConfirm, setShowConfirm] = useState(false)
+    const [confirmMsg, setConfigMsg] = useState('')
     const [onConfirmAction, setOnConfirmAction] = useState(() => () => { })
 
     const askForConfirmation = (msg, action) => {

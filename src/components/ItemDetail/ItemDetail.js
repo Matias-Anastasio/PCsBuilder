@@ -38,8 +38,11 @@ export const ItemDetail = ({ item }) => {
                     <p className='item-price'>Precio Final: <span className='price'>US$ {item.price}</span></p>
                     {
                         isInCart(item.id)
-                            ? <Link to="/cart" className='cart-link' >Ir al Carrito</Link>
-                            : <div>
+                            ? <div className='item-links'>
+                                <Link to='/' className='cart-link'>Ver Mas Productos</Link>
+                                <Link to="/cart" className='cart-link' >Ir al Carrito</Link>
+                            </div>
+                            : <div className='item-stock-container'>
                                 <p className='item-stock'>{item.stock > 1 ? `Cantidad disponible: ${item.stock} unidades` : '¡Último disponible!'}</p>
                                 {item.stock > 1 ? <ItemCount max={item.stock} amount={amount} setAmount={setAmount} /> : ""}
                                 <button onClick={handleAddCart} className='add-button'>Agregar al Carrito</button>

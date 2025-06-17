@@ -22,12 +22,12 @@
         .confirm-buttons {
             display: flex;
             justify-content: center;
-            gap: 1rem;
+            gap: 16px;
             margin-top: 1.5rem;
 
             .confirm,
             .cancel {
-                padding: 0.6rem 1.5rem;
+                padding: 10px 20px;
                 border: none;
                 // border-radius: 5px;
                 cursor: pointer;
@@ -40,7 +40,7 @@
             }
 
             .cancel {
-                background-color: #6c757d;
+                background-color: #2a2a2a;
                 color: white;
 
             }
