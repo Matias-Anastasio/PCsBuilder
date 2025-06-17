@@ -1,15 +1,35 @@
-import { useContext } from 'react';
+import { useContext, useState, useEffect } from 'react';
 import { CartContext } from '../../contex/CartContext';
 import './Cart.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrash } from '@fortawesome/free-solid-svg-icons';
 import { useNavigate } from 'react-router-dom';
+import { ConfirmModal } from '../ConfirmModal/ConfirmModal';
 
 export const Cart = () => {
 
     const { cart, cartPrice, deleteFromCart, clearCart } = useContext(CartContext)
 
     const navigate = useNavigate()
+
+    const [showConfirm, setShowConfirm] = useState(true)
+    const [confirmMsg, setConfigMsg] = useState('¿Eliminar este producto del carrito?')
+    const [onConfirmAction, setOnConfirmAction] = useState(() => () => { })
+
+    const askForConfirmation = (msg, action) => {
+        setConfigMsg(msg)
+        setOnConfirmAction(() => action)
+        setShowConfirm(true)
+    }
+
+    const handleConfirm = () => {
+        onConfirmAction()
+        setShowConfirm(false)
+    }
+
+    const handleCancel = () => {
+        setShowConfirm(false)
+    }
 
     const handleEmptyCart = () => {
         navigate("/")
@@ -18,6 +38,17 @@ export const Cart = () => {
     const handleBuy = () => {
         navigate("/checkout")
     }
+
+    useEffect(() => {
+    if (showConfirm) {
+        document.body.style.overflow = 'hidden';
+    } else {
+        document.body.style.overflow = 'auto';
+    }
+    return () => {
+        document.body.style.overflow = 'auto';
+    };
+}, [showConfirm]);
 
     if (cart.length === 0) {
         return (
@@ -44,17 +75,36 @@ export const Cart = () => {
                         </div>
                         <p className='cart-item-price'>Total: <span className='cart-price'>US$ {item.price * item.amount}</span></p>
                         <div className='cart-item-delete'>
-                            <button onClick={() => { deleteFromCart(item.id) }} className='delete-item-btn'><FontAwesomeIcon icon={faTrash} /></button>
+                            <button
+                                onClick={() => askForConfirmation(
+                                    '¿Eliminar este producto del carrito?',
+                                    () => deleteFromCart(item.id)
+                                )}
+                                className='delete-item-btn'><FontAwesomeIcon icon={faTrash} />
+                            </button>
                         </div>
 
                     </div>
                 ))
             }
             <div className='cart-total'>
-                <button onClick={clearCart} className='delete-all-btn'>Vaciar Carrito</button>
-                    <h3>Total: <span className='cart-total-price'>US$ {cartPrice()}</span></h3>
-                    <button onClick={handleBuy} className='cart-buy-btn'>Terminar Compra</button>
+                <button
+                    onClick={() => askForConfirmation(
+                        '¿Vaciar el carrito?',
+                        clearCart
+                    )}
+                    className='delete-all-btn'>Vaciar Carrito</button>
+                <h3>Total: <span className='cart-total-price'>US$ {cartPrice()}</span></h3>
+                <button onClick={handleBuy} className='cart-buy-btn'>Terminar Compra</button>
             </div>
+
+            {showConfirm && (
+                <ConfirmModal
+                    msg={confirmMsg}
+                    onConfirm={handleConfirm}
+                    onCancel={handleCancel}
+                />
+            )}
         </div>
     )
 }

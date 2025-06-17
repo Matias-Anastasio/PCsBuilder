@@ -1,0 +1,55 @@
+.lock-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba($color: #000000, $alpha: .5);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .confirm-modal {
+        background-color: #fff;
+        padding: 32px;
+        // border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+        text-align: center;
+        width: 90%;
+        max-width: 400px;
+
+        .confirm-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1.5rem;
+
+            .confirm,
+            .cancel {
+                padding: 0.6rem 1.5rem;
+                border: none;
+                // border-radius: 5px;
+                cursor: pointer;
+                font-weight: bold;
+            }
+
+            .confirm {
+                background-color: #d9534f;
+                color: white;
+            }
+
+            .cancel {
+                background-color: #6c757d;
+                color: white;
+
+            }
+
+        }
+
+
+
+
+
+    }
+}
